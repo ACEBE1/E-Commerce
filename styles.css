@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FEFEFE;
+    
+}
+.navbar{
+    background: linear-gradient(135deg, #da9a33, #FE9513);
+}
+
+.carousel {
+    margin-top: 56px; /* Navbar yüksekliği kadar boşluk */
+    margin-bottom: 40px;
+}
+
+.carousel-inner img {
+    height: 450px; /* İstediğiniz yüksekliği belirleyebilirsiniz */
+    object-fit: cover; /* Görsellerin düzgün yerleşimi */
+}
+.card-body{
+    background-color:bisque
+}
+
+.card {
+    height: 100%;
+}
+.category-row {
+    margin-top: 20px;
+}
+footer{ 
+    background: linear-gradient(135deg, #da9a33, #FE9513);
+    
+} 
+/* Sosyal Medya Bölümü */
+.social-media-container {
+    text-align: center; /* Sosyal medya başlığını ve logoları ortalar */
+    display: flex;
+    flex-direction: column; /* Logolar ve başlık dikey hizalanır */
+    align-items: center; /* Ortaya hizalar */
+}
+
+/* Sosyal Medya Başlığı */
+.menu-title {
+    font-size: 1.25rem; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Sosyal Medya Logoları */
+.social-media-links-container {
+    display: flex; /* Logolar yatay hizalanır */
+    justify-content: center; /* Ortalar */
+    gap: 10px; /* Logolar arasına boşluk ekler */
+}
+
+.social-media-image {
+    width: 32px; /* Logoların genişliği */
+    height: auto; /* Oranını korur */
+}
+
+
+
