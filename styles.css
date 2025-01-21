@@ -4,9 +4,67 @@ body{
     background-color: #FEFEFE;
     
 }
-.navbar{
-    background: linear-gradient(135deg, #da9a33, #FE9513);
+/* Search Input */
+.search-input {
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 15px 0 0 15px; /* Sol taraf yuvarlatılır */
+    padding: 10px 15px; /* İç boşluk */
+    font-size: 0.9rem; /* Yazı boyutu */
+    background-color: #f6f6f6; /* Arka plan rengi */
 }
+
+/* Search Icon */
+.search-icon {
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 0 15px 15px 0; /* Sağ taraf yuvarlatılır */
+    background-color: #f6f6f6; /* Arka plan rengi */
+    cursor: pointer; /* Tıklanabilir */
+}
+
+.search-icon i {
+    font-size: 1.2rem; /* İkon boyutu */
+    color: orange; /* İkon rengi */
+}
+
+/* Navbar Arka Plan ve Gölge */
+.navbar {
+    padding: 10px 0; /* Dikey boşluk */
+}
+
+.navbar-brand {
+    font-size: 1.7rem; /* Marka adı boyutu */
+}
+
+.nav-link {
+    font-size: 0.9rem; /* Menü yazı boyutu */
+}
+/* Kategori Bölümü */
+.slider-buttons {
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-top: 1px solid #ddd; /* Üst kenarlık */
+    border-bottom: 1px solid #ddd; /* Alt kenarlık */
+}
+
+/* Yuvarlak İkon */
+.slider-icon img {
+    width: 60px; /* Görsel genişliği */
+    height: 60px; /* Görsel yüksekliği */
+    padding: 5px; /* İç boşluk */
+    object-fit: cover; /* Görseller düzgün hizalanır */
+}
+
+/* Kategori Etiketi */
+.slider-label {
+    font-size: 0.9rem; /* Yazı boyutu */
+    color: #333; /* Yazı rengi */
+    margin-top: 5px; /* Görsel ile yazı arası boşluk */
+}
+
+
+
+
+
+
 
 .carousel {
     margin-top: 56px; /* Navbar yüksekliği kadar boşluk */
@@ -29,10 +87,10 @@ body{
 }
 footer{ 
     background: linear-gradient(135deg, #da9a33, #FE9513);
-    
+    height: 200px;
 } 
 /* Sosyal Medya Bölümü */
-.social-media-container {
+.social-media-container , .campaigns-links-container {
     text-align: center; /* Sosyal medya başlığını ve logoları ortalar */
     display: flex;
     flex-direction: column; /* Logolar ve başlık dikey hizalanır */
@@ -54,9 +112,39 @@ footer{
 }
 
 .social-media-image {
-    width: 32px; /* Logoların genişliği */
+    width: 30px; /* Logoların genişliği */
     height: auto; /* Oranını korur */
 }
+/* Kampanyalar Başlığı ve Liste */
+.footer-links-container {
+    text-align: center; /* Tüm içeriği ortalar */
+    margin-bottom: 20px; /* Alt boşluk ekler */
+}
+.sub-menu {
+    list-style-type: none; /* Liste noktalarını kaldırır */
+    padding: 0; /* Varsayılan padding'i kaldırır */
+    margin: 0; /* Varsayılan margin'i kaldırır */
+    text-align: center; /* Liste öğelerini ortalar */
+}
 
+.sub-menu-item {
+    margin-bottom: 10px; /* Liste öğeleri arasında boşluk */
+}
 
+.sub-menu-link {
+    color: #333333; /* Yazı rengi */
+    font-size: 14px; /* Yazı boyutu */
+    line-height: 18px; /* Satır yüksekliği */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+.sub-menu-link:hover {
+    color: white; /* Hover durumunda renk değişimi */ 
+}
+
+.footerend{
+    text-align: center;
+    background-color: #333333;
+    height: 45px;
+}
 

@@ -4,37 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <title>E-Ticaret Sitesi</title>
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top" >
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">E-Ticaret</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">Anasayfa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Ürünler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">İletişim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">SEPET</a>
-                        </li>
-                    </ul>
+                <!-- Sol Taraf: Marka -->
+                <a class="navbar-brand text-dark fw-bold" href="#">
+                    <img style="width: 130px; height: 100%; margin-bottom: -3px; " src="https://cdn.dsmcdn.com/web/logo/ty-web.svg" alt="">
+                </a>
+                
+                <!-- Orta Kısım: Search Bar -->
+                <div class="input-group mx-auto w-50">
+                    <input 
+                        type="text" 
+                        class="form-control search-input" 
+                        placeholder="Aradığınız ürün, kategori veya markayı yazınız" 
+                        aria-label="Search">
+                    <span class="input-group-text bg-white search-icon">
+                        <i class="bi bi-search"></i>
+                    </span>
                 </div>
+    
+                <!-- Sağ Taraf: Menü -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><i class="bi bi-person"></i> Giriş Yap</a>
+                    </li>
+                                   
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><i class="bi bi-heart"></i> Favorilerim</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"><i class="bi bi-cart"></i> Sepetim</a>
+                    </li>   
+                </ul>
             </div>
         </nav>
     </header>
+    <!--slider Button-->
+    <section class="slider-buttons py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center overflow-auto">
+                <!-- Tek bir kategori örneği -->
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/217/60/60" alt="Çok Satanlar" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">Çok Satanlar</div>
+                </div>
+    
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/237/60/60" alt="Avantajlı Ürünler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">Avantajlı Ürünler</div>
+                </div>
+    
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="story-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+                <div class="text-center mx-2">
+                    <div class="slider-icon">
+                        <img src="https://picsum.photos/id/227/60/60" alt="En Favoriler" class="rounded-circle border border-warning">
+                    </div>
+                    <div class="slider-label">En Favoriler</div>
+                </div>
+               
+                
+
+    
+                <!-- Daha fazla kategori -->
+            </div>
+        </div>
+    </section>
+    
+    
 
     <!-- Carousel -->
     <section class="mt-5">
@@ -81,7 +172,7 @@
     </section>
 
     <!-- Category -->
-    <section class="container py-5">
+    <section id="category" class="container py-5">
         <h2 class="text-center mb-4">Kategoriler</h2>
         <div class="row category-row">
             <div class="col-md-4">
@@ -197,9 +288,24 @@
     </section>
     <!-- Footer -->
      
-    <footer class=" text-white bg-secondary-subtle py-1">
+    <footer id="contact" class="text-white bg-secondary-subtle py-1">
         <div class="row">
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="footer-links-container">
+                    <div class="menu-title text-center text-white">Kampanyalar</div>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/s/trendyol-alisveris-kredisi" target="_blank" class="sub-menu-link">Alışveriş Kredisi</a>
+                    </li>
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/giris?cb=/Hesabim/Elite" target="_blank" class="sub-menu-link" > Elit Üyelik</a>
+                    </li>
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/s/hediye-rehberi" target="_blank" class="sub-menu-link"> Hediye Fikirleri</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
             <div class="col-md-4">
                 <div class="social-media-container">
                     <div class="menu-title">Sosyal Medya</div>
@@ -217,17 +323,40 @@
                             <img src="	https://cdn.dsmcdn.com/web/production/footer-x.png" alt="facebook" class="social-media-image">
                         </a>
                     </div>
+                    <div class="footer-links-container">
+                        <div class="menu-title text-center text-white">Satıcı</div>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item">
+                            <a href="https://akademi.trendyol.com/v2/satici-bilgi-merkezi" target="_blank" class="sub-menu-link">Satış Yapmaya Başla</a>
+                        </li>
+                    </ul>
+                    </div>
+
                 </div>
             </div>
             <div class="col-md-4">
-                
+                <div class="campaigns-links-container">
+                    <div class="menu-title text-center text-white">Yardım</div>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/s/trendyol-alisveris-kredisi" target="_blank" class="sub-menu-link">Sıkça Sorulan Sorular</a>
+                    </li>
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/giris?cb=/Hesabim/Elite" target="_blank" class="sub-menu-link" > Nasıl İade Edebilirim</a>
+                    </li>
+                    <li class="sub-menu-item">
+                        <a href="https://www.trendyol.com/s/hediye-rehberi" target="_blank" class="sub-menu-link"> Canlı Yardım</a>
+                    </li>
+                    
+                </ul>
+                </div>
             </div>
             
         </div>
        
    
-        <img src="" alt="">
-        <p class="text-center">&copy; 2025 E-ticaret Sitesi </p>
+        
+        <p class="footerend">&copy; 2025 E-ticaret Sitesi </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
