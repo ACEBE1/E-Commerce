@@ -40,48 +40,66 @@ body{
 }
 /* Kategori Bölümü */
 .slider-buttons {
-    background-color: #ffffff; /* Beyaz arka plan */
-    border-top: 1px solid #ddd; /* Üst kenarlık */
-    border-bottom: 1px solid #ddd; /* Alt kenarlık */
+    background-color: #ffffff; /* Beyaz arka plan */    
+    cursor: pointer;
 }
 
-/* Yuvarlak İkon */
 .slider-icon img {
     width: 60px; /* Görsel genişliği */
     height: 60px; /* Görsel yüksekliği */
-    padding: 5px; /* İç boşluk */
+    padding: 2px; /* İç boşluk */
     object-fit: cover; /* Görseller düzgün hizalanır */
+    border-radius: 50%; /* Yuvarlak şekil */
+    transition: 0.3s ease; /* Hover efekti için geçiş */
 }
+
 
 /* Kategori Etiketi */
 .slider-label {
-    font-size: 0.9rem; /* Yazı boyutu */
-    color: #333; /* Yazı rengi */
-    margin-top: 5px; /* Görsel ile yazı arası boşluk */
+    font-size: 0.9rem;
+    color: #333; /* Normal durumdaki yazı rengi */
+    margin-top: 5px;
+    transition: 0.3s ease;
 }
 
-
-
-
-
-
-
-.carousel {
-    margin-top: 56px; /* Navbar yüksekliği kadar boşluk */
-    margin-bottom: 40px;
+.text-center:hover .slider-icon img {
+    background-color: #da9a33; /* Görsel arka plan rengi */
+    transition: 0.3s ease; /* Yumuşak geçiş efekti */
 }
 
-.carousel-inner img {
-    height: 450px; /* İstediğiniz yüksekliği belirleyebilirsiniz */
-    object-fit: cover; /* Görsellerin düzgün yerleşimi */
-}
-.card-body{
-    background-color:bisque
+/* Yazının Hover Durumu */
+.text-center:hover .slider-label {
+    color: #da9a33; /* Yazı rengi değişir */
+    transition: 0.3s ease; /* Yumuşak geçiş efekti */  
 }
 
+.banner-image{
+    width: 400px;
+    margin-top: 35px;
+}
+
+/* Card Genel Yapısı */
 .card {
-    height: 100%;
+    overflow: hidden; /* İçerik taşmasını engeller */
+    position: relative; /* İçerik pozisyonunu sabitler */
+    transition: transform 2s ease, box-shadow 2s ease; /* Hover geçiş efekti */
 }
+
+/* Card Hover Durumu */
+.card:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+/* Görsel Ayarları */
+.card-img-top {
+    transition: transform 2s ease; /* Hover geçiş efekti */
+}
+
+/* Görsel Hover Durumu */
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Görselin büyümesi */
+}
+
 .category-row {
     margin-top: 20px;
 }
@@ -89,6 +107,7 @@ footer{
     background: linear-gradient(135deg, #da9a33, #FE9513);
     height: 200px;
 } 
+
 /* Sosyal Medya Bölümü */
 .social-media-container , .campaigns-links-container {
     text-align: center; /* Sosyal medya başlığını ve logoları ortalar */
