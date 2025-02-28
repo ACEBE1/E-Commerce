@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <!-- Sağ Taraf: Menü -->
             <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="bi bi-person"></i> Kategoriler</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="#"><i class="bi bi-person"></i> Giriş Yap</a>
                 </li>
